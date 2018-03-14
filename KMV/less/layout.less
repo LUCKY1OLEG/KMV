@@ -1,0 +1,468 @@
+body { background: #FDFDFD !important;
+	.nav-fluid {
+		background: #FDFDFD;
+		.logo-div {
+			text-align: center;
+			margin: 20px 0 10px 0;
+			img {
+				height: 90px;
+			}
+		}
+		.cart {
+			position: absolute;
+			top: 10px;
+			right: 117px;
+			font-family: "Open Sans", sans-serif;
+			font-weight: 100;
+			@media only screen and (max-width: 1199px) {
+				right: 18px
+			}
+			@media only screen and (max-width: 767px) {
+				top: 120px;
+				z-index: 99;
+			}
+			a {
+				color: #939598;
+				i {
+					color: #eacda3;
+color: -webkit-linear-gradient(to right, #d6ae7b, #eacda3);
+color: linear-gradient(to right, #d6ae7b, #eacda3);
+				}
+			}
+		}
+	}
+	.navbar {
+		background: #FDFDFD;
+		padding-bottom: 12px;
+		@media only screen and (max-width: 767px) {
+			display: block;
+		}
+		button {
+			background-color: #BEBDBD;
+		}
+		.navbar-collapse {
+			.navbar-nav {
+				margin: 0 auto;
+				li {
+					a {
+						padding: 12px 18px;
+						font-size: 14px;
+						color: #939598;
+						font-family: 'Sorts Mill Goudy', serif;
+						text-decoration: none;
+						text-transform: uppercase;
+						letter-spacing: 1.5px;
+						word-spacing: 3px;
+						-webkit-transition: color 300ms linear;
+					    -moz-transition: color 300ms linear;
+					    -o-transition: color 300ms linear;
+					    -ms-transition: color 300ms linear;
+					    transition: color 300ms linear;
+						&:hover {
+							color: #bcbec0;
+							text-decoration: none;
+						}
+						@media only screen and (max-width: 767px) {
+							display: block;
+							text-align: center;
+							padding-top: 27px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.mobile-intro {
+		background-image: url('img/vestuviu-stalas.jpg');
+		min-height: 540px;
+	    background-attachment: fixed;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+		margin: 7px auto 0 auto;
+		width: 100%;
+		@media only screen and (min-width: 767px) {
+			display: none;
+		}
+	}
+	.carousel {
+		@media only screen and (max-width: 767px) {
+			display: none;
+		}
+		.carousel-inner {
+			.carousel-item {
+				img {
+					height: 600px;
+					width: 1200px;
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+	.ivaizdis-fluid {
+		background-image: #FDFDFD;
+		padding: 100px 0;
+		@media only screen and (max-width: 991px) {
+			padding: 50px 0;
+		}
+		@media only screen and (max-width: 575px) {
+			padding: 0;
+		}
+		.ivaizdis-container {
+			.palme-box {
+				border-radius: 3px;
+				height: 600px;
+				background: #eacda3;
+background: -webkit-linear-gradient(to right, #d6ae7b, #eacda3);
+background: linear-gradient(to right, #d6ae7b, #eacda3);
+				@media only screen and (max-width: 991px) {
+					margin-bottom: 50px;
+				}
+				@media only screen and (max-width: 575px) {
+					margin-bottom: 0;
+				}
+				h2 {
+					color: #fefefe;
+					font-size: 36px;
+					font-family: 'Open Sans', sans-serif;
+					font-family: 'Sorts Mill Goudy', serif;
+					font-weight: 100;
+					text-align: center;
+					padding-top: 80px;
+				}
+				.palm-leaf-block {
+					text-align: center;
+					margin-top: 70px;
+					img {
+						width: 180px;
+					}
+				}
+				.more-block {
+					text-align: center;
+					margin-top: 70px;
+					.palm-more {
+						color: #FDFDFD;
+						font-family: "Open Sans", sans-serif;
+						font-weight: 100;
+						font-size: 21px;
+						padding: 12px 80px;
+						border-radius: 5px;
+						border: 1px solid #FDFDFD;
+						text-align: center;
+						margin: 0 auto;
+						-webkit-transition: background 500ms linear, color 500ms linear;
+						-moz-transition: background 500ms linear, color 500ms linear;
+						-o-transition: background 500ms linear, color 500ms linear;
+						-ms-transition: background 500ms linear, color 500ms linear;
+						transition: background 500ms linear, color 500ms linear;
+						&:hover {
+							text-decoration: none;
+							background: #FDFDFD;
+							color: #d6ae7b;
+						}
+					}
+				}
+			}
+			.ivaizdis-sideblock {
+				height: 600px;
+				background-image: url('img/vestuvinis-stalas.jpg');
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+	}
+	.parallax-block {
+	    background-image: url("img/poros-bucinys.jpg");
+	    min-height: 777px;
+	    background-attachment: fixed;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    margin-bottom: 90px;
+	    @media only screen and (max-width: 575px) {
+			margin-bottom: 0;
+		}
+    	.poros-block {
+    		height: 600px;
+    		margin-top: 90px;
+    		background: #eacda3;
+background: -webkit-linear-gradient(to right, #d6ae7b, #eacda3);
+background: linear-gradient(to right, #d6ae7b, #eacda3);
+			opacity: 0.9;
+			@media only screen and (max-width: 575px) {
+					margin-top: 180px;
+				}
+    		h2, h3 {
+				color: #FDFDFD;
+				font-size: 36px;
+				font-family: 'Open Sans', sans-serif;
+				font-family: 'Sorts Mill Goudy', serif;
+				font-weight: 100;
+				text-align: center;
+				padding-top: 80px;
+			}
+			h3 {
+				padding-top: 0;
+				font-family: 'Open Sans', sans-serif;
+				font-size: 27px;
+			}
+			.rings-block {
+				text-align: center;
+				margin-top: 50px;
+				img {
+					width: 180px;
+				}
+			}
+			.more-block {
+				text-align: center;
+				margin-top: 60px;
+				.poros-more {
+					color: #FDFDFD;
+					font-family: "Open Sans", sans-serif;
+					font-weight: 100;
+					font-size: 21px;
+					padding: 12px 80px;
+					border-radius: 5px;
+					border: 1px solid #FDFDFD;
+					text-align: center;
+					margin: 0 auto;
+					-webkit-transition: background 500ms linear, color 500ms linear;
+					-moz-transition: background 500ms linear, color 500ms linear;
+					-o-transition: background 500ms linear, color 500ms linear;
+					-ms-transition: background 500ms linear, color 500ms linear;
+					transition: background 500ms linear, color 500ms linear;
+					&:hover {
+						text-decoration: none;
+						background: #FDFDFD;
+						color: #d6ae7b;
+					}
+				}
+			}
+    	}
+	}
+	.footer-fluid {
+		padding-bottom: 0;
+		@media only screen and (max-width: 767px) {
+			padding-bottom: 50px;
+		}
+		@media only screen and (max-width: 575px) {
+			margin-top: 30px;
+			padding-bottom: 0;
+		}
+		.footer-container {
+			.row {
+				@media only screen and (max-width: 1199px) {
+					width: 100%;
+					text-align: center;
+					margin: 0 auto;
+				}
+				.footer-left {
+					background-color: #FDFDFD;
+					padding-top: 10px;
+					border-right: 1px solid #808080;
+					@media only screen and (max-width: 1199px) {
+						border: none;
+						margin-bottom: 30px;
+					}
+					@media only screen and (max-width: 767px) {
+						margin-bottom: 0;
+					}
+					.line {
+						margin: 0 15px;
+						border-top: 1px solid #808080;
+						width: 210px;
+						position: relative;
+						top: 15px;
+						height: 0px;
+						@media only screen and (max-width: 1199px) {
+    						text-align: center;
+    						margin: 0 auto;
+						}
+						@media only screen and (max-width: 767px) {
+    						display: none;
+						}
+					}
+					h4 {
+						letter-spacing: 2px;
+						color: #808080;
+						font-family: "Open Sans", sans-serif;
+						font-family: 'Sorts Mill Goudy', serif;
+						font-weight: 100;
+						padding-bottom: 10px;
+						@media only screen and (max-width: 1199px) {
+    						text-align: center;
+    						margin: 0 auto;
+						}
+					}
+					.social-icons {
+						margin-left: 9px;
+						@media only screen and (max-width: 1199px) {
+							width: 100%;
+    						margin: 20px 0 45px 0;
+    						text-align: center;
+						}
+						@media only screen and (max-width: 767px) {
+							margin-bottom: 10px;
+						}
+						a {
+							img {
+								width: 30px;
+							}
+							&:hover {
+								text-decoration: none;
+							}
+						}
+					}
+					.footer-photos {
+						margin: 0 auto;
+						// max-width: 680px;
+						@media only screen and (max-width: 767px) {
+							display: none;
+						}
+						.photo {
+							margin: 5px auto;
+							img {
+								width: 120px;
+							}
+						}
+					}
+					.copyright {
+						margin-top: 18px;
+						@media only screen and (max-width: 1199px) {
+							display: none;
+						}
+						p {
+							font-family: "Open Sans", sans-serif;
+							font-weight: 100;
+							color: #808080;
+							span {
+								margin-left: 54px;
+								font-family: "Open Sans", sans-serif;
+								font-weight: 100;
+								@media only screen and (max-width: 767px) {
+									display: block;
+									margin-left: 0;
+								}
+								a {
+									margin: 5px;
+								}
+							}	
+						}
+					}
+				}
+				.footer-right {
+					background-color: #FDFDFD;
+					h4 {
+						text-align: center;
+						color: #808080;
+						position: relative;
+						top: 15px;
+						font-family: 'Open Sans', sans-serif;
+						font-family: 'Sorts Mill Goudy', serif;
+						font-weight: 100;
+						letter-spacing: 2px;
+					}
+					.contacts {
+						margin-top: 30px;
+						margin-left: 67px;
+						@media only screen and (max-width: 991px) {
+							margin-left: 0;
+						}
+						.contact {
+							text-align: left;
+							margin-top: 15px;
+							font-family: "Open Sans", sans-serif;
+							font-weight: 100;
+							@media only screen and (max-width: 991px) {
+								text-align: center;
+							}
+							span {
+								color: #808080;
+								margin-right: 10px;
+							}
+						}
+					}
+					.contact-now {
+						margin-top: 45px;
+						text-align: center;
+						a {
+							color: #808080;
+							padding: 18px 40px;
+							border: 1px solid #808080;
+							font-family: "Open Sans", sans-serif;
+							font-weight: 100;
+							letter-spacing: 1px;
+							-webkit-transition: background 500ms linear, color 500ms linear;
+							-moz-transition: background 500ms linear, color 500ms linear;
+							-o-transition: background 500ms linear, color 500ms linear;
+							-ms-transition: background 500ms linear, color 500ms linear;
+							transition: background 500ms linear, color 500ms linear;
+							&:hover {
+								text-decoration: none;
+								background: #808080;
+								color: #FDFDFD;
+							}
+						}
+					}
+					.copyright {
+						margin-top: 45px;
+						font-family: "Open Sans", sans-serif;
+						font-weight: 100;
+						@media only screen and (min-width: 1200px) {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+	.intro-ivaizdis {
+		background-image: url("img/poros-bucinys.jpg");
+	    min-height: 630px;
+	    background-attachment: fixed;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    padding-top: 110px;
+	    .intro-block {
+	    	height: 450px;
+	    	opacity: 0.95;
+	    	background: #eacda3;
+background: -webkit-linear-gradient(to right, #d6ae7b, #eacda3);
+background: linear-gradient(to right, #d6ae7b, #eacda3);
+			h1 {
+				padding-top: 45px;
+				font-family: 'Sorts Mill Goudy', serif;
+				color: #FDFDFD;
+				text-align: center;
+				font-size: 32px;
+			}
+			p {
+				padding-top: 27px;
+				text-align: center;
+				color: #FDFDFD;
+				font-size: 30px;
+				font-family: 'Sorts Mill Goudy', serif;
+			}
+			.ivaizdis-start {
+				text-align: center;
+				padding-top: 36px;
+				a {
+					font-size: 30px;
+					text-align: center;
+					color: #FDFDFD;
+					font-family: 'Sorts Mill Goudy', serif;
+					padding: 16px 27px 12px 27px;
+					border: 1px solid #FDFDFD;
+					&:hover {
+						text-decoration: none;
+						background-color: crimson;
+						border: none;
+					}
+				}
+			}
+	    }
+	}
+}
