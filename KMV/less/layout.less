@@ -150,11 +150,11 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 						border: 1px solid #FDFDFD;
 						text-align: center;
 						margin: 0 auto;
-						-webkit-transition: background 500ms linear, color 500ms linear;
-						-moz-transition: background 500ms linear, color 500ms linear;
-						-o-transition: background 500ms linear, color 500ms linear;
-						-ms-transition: background 500ms linear, color 500ms linear;
-						transition: background 500ms linear, color 500ms linear;
+						-webkit-transition: background 300ms linear, color 300ms linear;
+						-moz-transition: background 300ms linear, color 300ms linear;
+						-o-transition: background 300ms linear, color 300ms linear;
+						-ms-transition: background 300ms linear, color 300ms linear;
+						transition: background 300ms linear, color 300ms linear;
 						&:hover {
 							text-decoration: none;
 							background: #FDFDFD;
@@ -228,11 +228,11 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 					border: 1px solid #FDFDFD;
 					text-align: center;
 					margin: 0 auto;
-					-webkit-transition: background 500ms linear, color 500ms linear;
-					-moz-transition: background 500ms linear, color 500ms linear;
-					-o-transition: background 500ms linear, color 500ms linear;
-					-ms-transition: background 500ms linear, color 500ms linear;
-					transition: background 500ms linear, color 500ms linear;
+					-webkit-transition: background 300ms linear, color 300ms linear;
+					-moz-transition: background 300ms linear, color 300ms linear;
+					-o-transition: background 300ms linear, color 300ms linear;
+					-ms-transition: background 300ms linear, color 300ms linear;
+					transition: background 300ms linear, color 300ms linear;
 					&:hover {
 						text-decoration: none;
 						background: #FDFDFD;
@@ -394,11 +394,11 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 							font-family: "Open Sans", sans-serif;
 							font-weight: 100;
 							letter-spacing: 1px;
-							-webkit-transition: background 500ms linear, color 500ms linear;
-							-moz-transition: background 500ms linear, color 500ms linear;
-							-o-transition: background 500ms linear, color 500ms linear;
-							-ms-transition: background 500ms linear, color 500ms linear;
-							transition: background 500ms linear, color 500ms linear;
+							-webkit-transition: background 300ms linear, color 300ms linear;
+							-moz-transition: background 300ms linear, color 300ms linear;
+							-o-transition: background 300ms linear, color 300ms linear;
+							-ms-transition: background 300ms linear, color 300ms linear;
+							transition: background 300ms linear, color 300ms linear;
 							&:hover {
 								text-decoration: none;
 								background: #808080;
@@ -419,7 +419,7 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 		}
 	}
 	.intro-ivaizdis {
-		background-image: url("img/poros-bucinys.jpg");
+		background-image: url("img/dekoras.jpg");
 	    min-height: 630px;
 	    background-attachment: fixed;
 	    background-position: center;
@@ -427,17 +427,26 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 	    background-size: cover;
 	    padding-top: 110px;
 	    .intro-block {
-	    	height: 450px;
+			padding-bottom: 45px;
 	    	opacity: 0.95;
 	    	background: #eacda3;
 background: -webkit-linear-gradient(to right, #d6ae7b, #eacda3);
 background: linear-gradient(to right, #d6ae7b, #eacda3);
+			@media only screen and (max-width: 767px) {
+
+			}
 			h1 {
 				padding-top: 45px;
 				font-family: 'Sorts Mill Goudy', serif;
 				color: #FDFDFD;
 				text-align: center;
 				font-size: 32px;
+				@media only screen and (max-width: 767px) {
+					font-size: 26px;
+				}
+				@media only screen and (max-width: 767px) {
+					font-size: 24px;
+				}
 			}
 			p {
 				padding-top: 27px;
@@ -445,6 +454,9 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 				color: #FDFDFD;
 				font-size: 30px;
 				font-family: 'Sorts Mill Goudy', serif;
+				@media only screen and (max-width: 767px) {
+					font-size: 24px;
+				}
 			}
 			.ivaizdis-start {
 				text-align: center;
@@ -452,17 +464,155 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 				a {
 					font-size: 30px;
 					text-align: center;
+					border-radius: 3px;
 					color: #FDFDFD;
 					font-family: 'Sorts Mill Goudy', serif;
 					padding: 16px 27px 12px 27px;
 					border: 1px solid #FDFDFD;
+					-webkit-transition: background 300ms linear, color 300ms linear;
+					-moz-transition: background 300ms linear, color 300ms linear;
+					-o-transition: background 300ms linear, color 300ms linear;
+					-ms-transition: background 300ms linear, color 300ms linear;
+					transition: background 300ms linear, color 300ms linear;
+					@media only screen and (max-width: 767px) {
+						font-size: 27px;
+					}
 					&:hover {
 						text-decoration: none;
-						background-color: crimson;
+						background-color: #FDFDFD;
+						color: #d6ae7b;
 						border: none;
 					}
 				}
 			}
 	    }
+	}
+	.photo-menu {
+		margin-top: 70px;
+		margin-bottom: 70px;
+		.row {
+
+			.filters {
+				background: #eacda3;
+background: -webkit-linear-gradient(to right, #d6ae7b, #eacda3);
+background: linear-gradient(to right, #d6ae7b, #eacda3);
+				opacity: 0.90;
+				height: 400px;
+				border-radius: 3px;
+				ul {
+					li {
+						margin: 27px auto;
+						width: 200px;
+						text-align: center;
+						a {
+							border-radius: 3px;
+							border: 1px solid #FDFDFD;
+							display: block;
+							padding: 9px;
+							font-family: "Open Sans", sans-serif;
+							font-weight: 100;
+							text-decoration: none;
+							color: #FDFDFD;
+							-webkit-transition: background 300ms linear, color 300ms linear;
+							-moz-transition: background 300ms linear, color 300ms linear;
+							-o-transition: background 300ms linear, color 300ms linear;
+							-ms-transition: background 300ms linear, color 300ms linear;
+							transition: background 300ms linear, color 300ms linear;
+							&:hover {
+								background: #FDFDFD;
+								color: #d6ae7b;
+							}
+						}
+					}
+					.colors-filter {
+						padding-left: 10px;
+						display: none;
+						border-radius: 3px;
+						margin: 0 auto;
+						.color-option {
+							background: red;
+							width: 36px;
+							height: 36px;
+							border-radius: 50%;
+							margin: 10px 5px;
+							text-align: center;
+						}
+						form {
+							margin-left: 18px;
+							input {
+							}
+							label {
+								font-family: 'Open Sans', sans-serif;
+								font-weight: 100;
+								color: #FDFDFD;
+								position:
+								relative;
+								top: 2px;
+								left: 5px;
+							}
+						}
+					}
+				}
+			}
+			.higher {
+				height: 800px;
+			}
+			.filtered-photos {
+				// background-color: orange;
+				border-radius: 3px;
+				h2 {
+					text-align: center;
+					font-family: 'Sorts Mill Goudy', serif;
+				}
+				.row {
+					// padding: 18px 0;
+					.photoblock {
+						height: 200px;
+						width: 200px;
+						border-radius: 3px;
+						background: url('img/insta5.jpg');
+						margin: 0 auto 36px auto;
+						img {
+							width: 200px;
+							position: absolute;
+							border-radius: 3px;
+						}
+						&:hover {
+							// opacity: 0.8;
+							background-color: #000;
+						}
+						.like-it {
+							width: 200px;
+							position: relative;
+							overflow: hidden;
+							top: 100px;
+							height: 100px;
+							margin: 0 auto;
+							text-align: center;
+							display: none;
+							&:hover {
+								// opacity: 0.9;
+							}
+							.like-cart {
+								width: 45px;
+								height: 45px;
+								position: relative;
+								top: 45px;
+								background: url('img/hearty.png');
+								background-size: contain;
+								background-repeat: no-repeat;
+								margin: 0 auto;
+								opacity: 0.6;
+								cursor: pointer;
+							}
+							.liked {
+								opacity: 0.9;
+								display: block;
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }

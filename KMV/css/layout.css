@@ -164,11 +164,11 @@ body .ivaizdis-fluid .ivaizdis-container .palme-box .more-block .palm-more {
   border: 1px solid #FDFDFD;
   text-align: center;
   margin: 0 auto;
-  -webkit-transition: background 500ms linear, color 500ms linear;
-  -moz-transition: background 500ms linear, color 500ms linear;
-  -o-transition: background 500ms linear, color 500ms linear;
-  -ms-transition: background 500ms linear, color 500ms linear;
-  transition: background 500ms linear, color 500ms linear;
+  -webkit-transition: background 300ms linear, color 300ms linear;
+  -moz-transition: background 300ms linear, color 300ms linear;
+  -o-transition: background 300ms linear, color 300ms linear;
+  -ms-transition: background 300ms linear, color 300ms linear;
+  transition: background 300ms linear, color 300ms linear;
 }
 body .ivaizdis-fluid .ivaizdis-container .palme-box .more-block .palm-more:hover {
   text-decoration: none;
@@ -246,11 +246,11 @@ body .parallax-block .poros-block .more-block .poros-more {
   border: 1px solid #FDFDFD;
   text-align: center;
   margin: 0 auto;
-  -webkit-transition: background 500ms linear, color 500ms linear;
-  -moz-transition: background 500ms linear, color 500ms linear;
-  -o-transition: background 500ms linear, color 500ms linear;
-  -ms-transition: background 500ms linear, color 500ms linear;
-  transition: background 500ms linear, color 500ms linear;
+  -webkit-transition: background 300ms linear, color 300ms linear;
+  -moz-transition: background 300ms linear, color 300ms linear;
+  -o-transition: background 300ms linear, color 300ms linear;
+  -ms-transition: background 300ms linear, color 300ms linear;
+  transition: background 300ms linear, color 300ms linear;
 }
 body .parallax-block .poros-block .more-block .poros-more:hover {
   text-decoration: none;
@@ -437,11 +437,11 @@ body .footer-fluid .footer-container .row .footer-right .contact-now a {
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
   letter-spacing: 1px;
-  -webkit-transition: background 500ms linear, color 500ms linear;
-  -moz-transition: background 500ms linear, color 500ms linear;
-  -o-transition: background 500ms linear, color 500ms linear;
-  -ms-transition: background 500ms linear, color 500ms linear;
-  transition: background 500ms linear, color 500ms linear;
+  -webkit-transition: background 300ms linear, color 300ms linear;
+  -moz-transition: background 300ms linear, color 300ms linear;
+  -o-transition: background 300ms linear, color 300ms linear;
+  -ms-transition: background 300ms linear, color 300ms linear;
+  transition: background 300ms linear, color 300ms linear;
 }
 body .footer-fluid .footer-container .row .footer-right .contact-now a:hover {
   text-decoration: none;
@@ -459,7 +459,7 @@ body .footer-fluid .footer-container .row .footer-right .copyright {
   }
 }
 body .intro-ivaizdis {
-  background-image: url("img/poros-bucinys.jpg");
+  background-image: url("img/dekoras.jpg");
   min-height: 630px;
   background-attachment: fixed;
   background-position: center;
@@ -468,7 +468,7 @@ body .intro-ivaizdis {
   padding-top: 110px;
 }
 body .intro-ivaizdis .intro-block {
-  height: 450px;
+  padding-bottom: 45px;
   opacity: 0.95;
   background: #eacda3;
   background: -webkit-linear-gradient(to right, #d6ae7b, #eacda3);
@@ -481,12 +481,27 @@ body .intro-ivaizdis .intro-block h1 {
   text-align: center;
   font-size: 32px;
 }
+@media only screen and (max-width: 767px) {
+  body .intro-ivaizdis .intro-block h1 {
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  body .intro-ivaizdis .intro-block h1 {
+    font-size: 24px;
+  }
+}
 body .intro-ivaizdis .intro-block p {
   padding-top: 27px;
   text-align: center;
   color: #FDFDFD;
   font-size: 30px;
   font-family: 'Sorts Mill Goudy', serif;
+}
+@media only screen and (max-width: 767px) {
+  body .intro-ivaizdis .intro-block p {
+    font-size: 24px;
+  }
 }
 body .intro-ivaizdis .intro-block .ivaizdis-start {
   text-align: center;
@@ -495,13 +510,137 @@ body .intro-ivaizdis .intro-block .ivaizdis-start {
 body .intro-ivaizdis .intro-block .ivaizdis-start a {
   font-size: 30px;
   text-align: center;
+  border-radius: 3px;
   color: #FDFDFD;
   font-family: 'Sorts Mill Goudy', serif;
   padding: 16px 27px 12px 27px;
   border: 1px solid #FDFDFD;
+  -webkit-transition: background 300ms linear, color 300ms linear;
+  -moz-transition: background 300ms linear, color 300ms linear;
+  -o-transition: background 300ms linear, color 300ms linear;
+  -ms-transition: background 300ms linear, color 300ms linear;
+  transition: background 300ms linear, color 300ms linear;
+}
+@media only screen and (max-width: 767px) {
+  body .intro-ivaizdis .intro-block .ivaizdis-start a {
+    font-size: 27px;
+  }
 }
 body .intro-ivaizdis .intro-block .ivaizdis-start a:hover {
   text-decoration: none;
-  background-color: crimson;
+  background-color: #FDFDFD;
+  color: #d6ae7b;
   border: none;
+}
+body .photo-menu {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+body .photo-menu .row .filters {
+  background: #eacda3;
+  background: -webkit-linear-gradient(to right, #d6ae7b, #eacda3);
+  background: linear-gradient(to right, #d6ae7b, #eacda3);
+  opacity: 0.90;
+  height: 400px;
+  border-radius: 3px;
+}
+body .photo-menu .row .filters ul li {
+  margin: 27px auto;
+  width: 200px;
+  text-align: center;
+}
+body .photo-menu .row .filters ul li a {
+  border-radius: 3px;
+  border: 1px solid #FDFDFD;
+  display: block;
+  padding: 9px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  text-decoration: none;
+  color: #FDFDFD;
+  -webkit-transition: background 300ms linear, color 300ms linear;
+  -moz-transition: background 300ms linear, color 300ms linear;
+  -o-transition: background 300ms linear, color 300ms linear;
+  -ms-transition: background 300ms linear, color 300ms linear;
+  transition: background 300ms linear, color 300ms linear;
+}
+body .photo-menu .row .filters ul li a:hover {
+  background: #FDFDFD;
+  color: #d6ae7b;
+}
+body .photo-menu .row .filters ul .colors-filter {
+  padding-left: 10px;
+  display: none;
+  border-radius: 3px;
+  margin: 0 auto;
+}
+body .photo-menu .row .filters ul .colors-filter .color-option {
+  background: red;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin: 10px 5px;
+  text-align: center;
+}
+body .photo-menu .row .filters ul .colors-filter form {
+  margin-left: 18px;
+}
+body .photo-menu .row .filters ul .colors-filter form label {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  color: #FDFDFD;
+  position: relative;
+  top: 2px;
+  left: 5px;
+}
+body .photo-menu .row .higher {
+  height: 800px;
+}
+body .photo-menu .row .filtered-photos {
+  border-radius: 3px;
+}
+body .photo-menu .row .filtered-photos h2 {
+  text-align: center;
+  font-family: 'Sorts Mill Goudy', serif;
+}
+body .photo-menu .row .filtered-photos .row .photoblock {
+  height: 200px;
+  width: 200px;
+  border-radius: 3px;
+  background: url('img/insta5.jpg');
+  margin: 0 auto 36px auto;
+}
+body .photo-menu .row .filtered-photos .row .photoblock img {
+  width: 200px;
+  position: absolute;
+  border-radius: 3px;
+}
+body .photo-menu .row .filtered-photos .row .photoblock:hover {
+  background-color: #000;
+}
+body .photo-menu .row .filtered-photos .row .photoblock .like-it {
+  width: 200px;
+  position: relative;
+  overflow: hidden;
+  top: 100px;
+  height: 100px;
+  margin: 0 auto;
+  text-align: center;
+  display: none;
+}
+body .photo-menu .row .filtered-photos .row .photoblock .like-it .like-cart {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  top: 45px;
+  background: url('img/hearty.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  opacity: 0.6;
+  cursor: pointer;
+}
+body .photo-menu .row .filtered-photos .row .photoblock .like-it .liked {
+  opacity: 0.9;
+  display: block;
 }
