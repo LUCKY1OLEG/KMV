@@ -90,6 +90,13 @@ body .navbar .navbar-collapse .navbar-nav li a:hover {
     padding-top: 27px;
   }
 }
+body .navbar .navbar-collapse .navbar-nav li .dropdown-menu {
+  margin-top: 11px;
+  margin-left: -42px;
+}
+body .navbar .navbar-collapse .navbar-nav li .dropdown-menu li {
+  text-align: center;
+}
 body .mobile-intro {
   background-image: url('img/vestuviu-stalas.jpg');
   min-height: 540px;
@@ -442,7 +449,7 @@ body .footer-fluid .footer-container .row .footer-right .contact-now {
 body .footer-fluid .footer-container .row .footer-right .contact-now a {
   color: #808080;
   padding: 18px 40px;
-  border: 1px solid #808080;
+  border: 1px solid #eacda3;
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
   letter-spacing: 1px;
@@ -454,7 +461,7 @@ body .footer-fluid .footer-container .row .footer-right .contact-now a {
 }
 body .footer-fluid .footer-container .row .footer-right .contact-now a:hover {
   text-decoration: none;
-  background: #808080;
+  background: #eacda3;
   color: #FDFDFD;
 }
 body .footer-fluid .footer-container .row .footer-right .copyright {
@@ -478,6 +485,7 @@ body .intro-ivaizdis {
 }
 body .intro-ivaizdis .intro-block {
   padding-bottom: 45px;
+  margin-top: 45px;
   opacity: 0.95;
   background: #eacda3;
   background: -webkit-linear-gradient(to right, #d6ae7b, #eacda3);
@@ -545,14 +553,17 @@ body .photo-menu {
   margin-bottom: 70px;
 }
 body .photo-menu .row .filters {
+  margin-top: 18px;
+  padding-top: 27px;
+}
+body .photo-menu .row .filters ul {
+  padding: 40px 0;
   background: #eacda3;
   background: -webkit-linear-gradient(to right, #d6ae7b, #eacda3);
   background: linear-gradient(to right, #d6ae7b, #eacda3);
-  opacity: 0.90;
-  height: 400px;
 }
 body .photo-menu .row .filters ul li {
-  margin: 27px auto;
+  margin: 18px auto;
   width: 200px;
   text-align: center;
 }
@@ -575,8 +586,7 @@ body .photo-menu .row .filters ul li a:hover {
   color: #d6ae7b;
 }
 body .photo-menu .row .filters ul .colors-filter {
-  padding-left: 10px;
-  display: none;
+  padding-left: 9px;
   margin: 0 auto;
 }
 body .photo-menu .row .filters ul .colors-filter .color-option {
@@ -609,6 +619,7 @@ body .photo-menu .row .filtered-photos h2 {
 body .photo-menu .row .filtered-photos .row .photoblock {
   height: 200px;
   width: 200px;
+  cursor: pointer;
   background: url('img/insta5.jpg');
   margin: 0 auto 36px auto;
 }
@@ -619,21 +630,12 @@ body .photo-menu .row .filtered-photos .row .photoblock img {
 body .photo-menu .row .filtered-photos .row .photoblock:hover {
   background-color: #000;
 }
-body .photo-menu .row .filtered-photos .row .photoblock .like-it {
-  width: 200px;
+body .photo-menu .row .filtered-photos .row .photoblock .like-cart {
+  width: 27px;
+  height: 27px;
   position: relative;
-  overflow: hidden;
-  top: 100px;
-  height: 100px;
-  margin: 0 auto;
-  text-align: center;
+  top: 170px;
   display: none;
-}
-body .photo-menu .row .filtered-photos .row .photoblock .like-it .like-cart {
-  width: 45px;
-  height: 45px;
-  position: relative;
-  top: 45px;
   background: url('img/hearty.png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -641,7 +643,7 @@ body .photo-menu .row .filtered-photos .row .photoblock .like-it .like-cart {
   opacity: 0.6;
   cursor: pointer;
 }
-body .photo-menu .row .filtered-photos .row .photoblock .like-it .liked {
+body .photo-menu .row .filtered-photos .row .photoblock .liked {
   opacity: 0.9;
   display: block;
 }

@@ -81,6 +81,13 @@ color: linear-gradient(to right, #d6ae7b, #eacda3);
 							padding-top: 27px;
 						}
 					}
+					.dropdown-menu {
+						margin-top: 11px;
+						margin-left: -42px;
+						li {
+							text-align: center;
+						}
+					}
 				}
 			}
 		}
@@ -400,7 +407,7 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 						a {
 							color: #808080;
 							padding: 18px 40px;
-							border: 1px solid #808080;
+							border: 1px solid #eacda3;
 							font-family: "Open Sans", sans-serif;
 							font-weight: 100;
 							letter-spacing: 1px;
@@ -411,7 +418,7 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 							transition: background 300ms linear, color 300ms linear;
 							&:hover {
 								text-decoration: none;
-								background: #808080;
+								background: #eacda3;
 								color: #FDFDFD;
 							}
 						}
@@ -438,6 +445,7 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 	    padding-top: 110px;
 	    .intro-block {
 			padding-bottom: 45px;
+			margin-top: 45px;
 	    	opacity: 0.95;
 	    	background: #eacda3;
 background: -webkit-linear-gradient(to right, #d6ae7b, #eacda3);
@@ -502,14 +510,16 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 		.row {
 
 			.filters {
-				background: #eacda3;
+				// opacity: 0.90;
+				margin-top: 18px;
+				padding-top: 27px;
+				ul {
+					padding: 40px 0;
+					background: #eacda3;
 background: -webkit-linear-gradient(to right, #d6ae7b, #eacda3);
 background: linear-gradient(to right, #d6ae7b, #eacda3);
-				opacity: 0.90;
-				height: 400px;
-				ul {
 					li {
-						margin: 27px auto;
+						margin: 18px auto;
 						width: 200px;
 						text-align: center;
 						a {
@@ -532,8 +542,8 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 						}
 					}
 					.colors-filter {
-						padding-left: 10px;
-						display: none;
+						padding-left: 9px;
+						// display: none;
 						margin: 0 auto;
 						.color-option {
 							background: red;
@@ -564,7 +574,6 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 				height: 800px;
 			}
 			.filtered-photos {
-				// background-color: orange;
 				h2 {
 					text-align: center;
 					color: #939598;
@@ -575,6 +584,7 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 					.photoblock {
 						height: 200px;
 						width: 200px;
+						cursor: pointer;
 						background: url('img/insta5.jpg');
 						margin: 0 auto 36px auto;
 						img {
@@ -585,34 +595,22 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 							// opacity: 0.8;
 							background-color: #000;
 						}
-						.like-it {
-							width: 200px;
+						.like-cart {
+							width: 27px;
+							height: 27px;
 							position: relative;
-							overflow: hidden;
-							top: 100px;
-							height: 100px;
-							margin: 0 auto;
-							text-align: center;
+							top: 170px;
 							display: none;
-							&:hover {
-								// opacity: 0.9;
-							}
-							.like-cart {
-								width: 45px;
-								height: 45px;
-								position: relative;
-								top: 45px;
-								background: url('img/hearty.png');
-								background-size: contain;
-								background-repeat: no-repeat;
-								margin: 0 auto;
-								opacity: 0.6;
-								cursor: pointer;
-							}
-							.liked {
-								opacity: 0.9;
-								display: block;
-							}
+							background: url('img/hearty.png');
+							background-size: contain;
+							background-repeat: no-repeat;
+							margin: 0 auto;
+							opacity: 0.6;
+							cursor: pointer;
+						}
+						.liked {
+							opacity: 0.9;
+							display: block;
 						}
 					}
 				}
