@@ -587,6 +587,7 @@ body .photo-menu .row .filters ul li a:hover {
 }
 body .photo-menu .row .filters ul .colors-filter {
   padding-left: 9px;
+  display: none;
   width: auto;
   text-align: left;
   margin: 0 auto;
@@ -673,10 +674,10 @@ body .photo-menu .row .filtered-photos .row .photoblock .like-cart {
   background-size: contain;
   background-repeat: no-repeat;
   margin: 0 auto;
-  opacity: 0.6;
+  opacity: 0.5;
   cursor: pointer;
 }
 body .photo-menu .row .filtered-photos .row .photoblock .liked {
-  opacity: 0.9;
+  opacity: 1;
   display: block;
 }
