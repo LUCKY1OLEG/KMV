@@ -544,6 +544,8 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 					.colors-filter {
 						padding-left: 9px;
 						// display: none;
+						width: auto;
+						text-align: left;
 						margin: 0 auto;
 						.color-option {
 							background: red;
@@ -555,16 +557,44 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 						}
 						form {
 							margin-left: 18px;
-							input {
+							.css-checkbox {
+				            	position: absolute;
+				            	z-index: -1000;
+				            	left: -1000px;
+				            	overflow: hidden;
+				            	clip: rect(0 0 0 0);
+				            	height: 1px;
+				            	width: 1px;
+				            	margin: -1px;
+				            	padding: 0;
+				            	border: 0;
+				            }
+				            .css-checkbox + label.css-label {
+								padding-left: 23px;
+								height: 18px; 
+								display: inline-block;
+								line-height: 18px;
+								background-repeat: no-repeat;
+								background-position: 0 0;
+								vertical-align: middle;
+								cursor: pointer;
 							}
-							label {
+							.css-checkbox:checked + label.css-label {
+								background-position: 0 -18px;
+							}
+							label.css-label {
+								background-image:url(https://csscheckbox.com/checkboxes/u/csscheckbox_001aa7bf6327f8fac80e0eb160776ef4.png);
+								-webkit-touch-callout: none;
+								-webkit-user-select: none;
+								-khtml-user-select: none;
+								-moz-user-select: none;
+								-ms-user-select: none;
+								user-select: none;
 								font-family: 'Open Sans', sans-serif;
 								font-weight: 100;
 								color: #FDFDFD;
-								position:
-								relative;
+								position: relative;
 								top: 2px;
-								left: 5px;
 							}
 						}
 					}
