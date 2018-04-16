@@ -513,7 +513,7 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 				margin-top: 18px;
 				padding-top: 27px;
 				ul {
-					padding: 36px 0;
+					padding: 36px 0 18px 0;
 					background: #eacda3;
 background: -webkit-linear-gradient(to right, #d6ae7b, #eacda3);
 background: linear-gradient(to right, #d6ae7b, #eacda3);
@@ -521,7 +521,7 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 						margin: 18px auto;
 						width: 200px;
 						text-align: center;
-						a {
+						a, .submit-form {
 							border: 1px solid #FDFDFD;
 							display: block;
 							padding: 9px;
@@ -540,9 +540,20 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 							}
 						}
 					}
+					.submit-li {
+						margin-top: 30px;
+						input {
+							background: transparent;
+							color: #fdfdfd;
+							-webkit-appearance: none;
+							cursor: pointer;
+							margin: 33px auto 0 auto;
+							padding: 6px 12px;
+						}
+					}
 					.colors-filter {
 						padding-left: 9px;
-						// display: none;
+						display: none;
 						width: auto;
 						text-align: left;
 						margin: 0 auto;
@@ -563,45 +574,45 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 								border: 2px dotted #000;
 							}
 						}
-							.css-checkbox {
-				            	position: absolute;
-				            	z-index: -1000;
-				            	left: -1000px;
-				            	overflow: hidden;
-				            	clip: rect(0 0 0 0);
-				            	height: 1px;
-				            	width: 1px;
-				            	margin: -1px;
-				            	padding: 0;
-				            	border: 0;
-				            }
-				            .css-checkbox + label.css-label {
-								padding-left: 23px;
-								height: 18px; 
-								display: inline-block;
-								line-height: 18px;
-								background-repeat: no-repeat;
-								background-position: 0 0;
-								vertical-align: middle;
-								cursor: pointer;
-							}
-							.css-checkbox:checked + label.css-label {
-								background-position: 0 -18px;
-							}
-							label.css-label {
-								background-image:url(https://csscheckbox.com/checkboxes/u/csscheckbox_001aa7bf6327f8fac80e0eb160776ef4.png);
-								-webkit-touch-callout: none;
-								-webkit-user-select: none;
-								-khtml-user-select: none;
-								-moz-user-select: none;
-								-ms-user-select: none;
-								user-select: none;
-								font-family: 'Open Sans', sans-serif;
-								font-weight: 100;
-								color: #FDFDFD;
-								position: relative;
-								top: 2px;
-							}
+						.css-checkbox {
+			            	position: absolute;
+			            	z-index: -1000;
+			            	left: -1000px;
+			            	overflow: hidden;
+			            	clip: rect(0 0 0 0);
+			            	height: 1px;
+			            	width: 1px;
+			            	margin: -1px;
+			            	padding: 0;
+			            	border: 0;
+			            }
+			            .css-checkbox + label.css-label {
+							padding-left: 23px;
+							height: 18px; 
+							display: inline-block;
+							line-height: 18px;
+							background-repeat: no-repeat;
+							background-position: 0 0;
+							vertical-align: middle;
+							cursor: pointer;
+						}
+						.css-checkbox:checked + label.css-label {
+							background-position: 0 -18px;
+						}
+						label.css-label {
+							background-image:url(https://csscheckbox.com/checkboxes/u/csscheckbox_001aa7bf6327f8fac80e0eb160776ef4.png);
+							-webkit-touch-callout: none;
+							-webkit-user-select: none;
+							-khtml-user-select: none;
+							-moz-user-select: none;
+							-ms-user-select: none;
+							user-select: none;
+							font-family: 'Open Sans', sans-serif;
+							font-weight: 100;
+							color: #FDFDFD;
+							position: relative;
+							top: 2px;
+						}
 					}
 				}
 			}

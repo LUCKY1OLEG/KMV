@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     $(".filter-toggle").click(function(e){
     	e.preventDefault();
-    	$(this).parent().next('li').slideToggle(360);
+    	$(this).parent().next('li').slideToggle(270);
     	var addHeight = $(this).parent().next('li').height();
     	var parHeight = $(this).parent().parent().parent().height();
     	$(this).parent().parent().parent().height( $(this).parent().parent().parent().height(parHeight + addHeight));

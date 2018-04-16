@@ -743,7 +743,7 @@ body .photo-menu .row .filters {
   padding-top: 27px;
 }
 body .photo-menu .row .filters ul {
-  padding: 36px 0;
+  padding: 36px 0 18px 0;
   background: #eacda3;
   background: -webkit-linear-gradient(to right, #d6ae7b, #eacda3);
   background: linear-gradient(to right, #d6ae7b, #eacda3);
@@ -753,7 +753,8 @@ body .photo-menu .row .filters ul li {
   width: 200px;
   text-align: center;
 }
-body .photo-menu .row .filters ul li a {
+body .photo-menu .row .filters ul li a,
+body .photo-menu .row .filters ul li .submit-form {
   border: 1px solid #FDFDFD;
   display: block;
   padding: 9px;
@@ -767,12 +768,25 @@ body .photo-menu .row .filters ul li a {
   -ms-transition: background 300ms linear, color 300ms linear;
   transition: background 300ms linear, color 300ms linear;
 }
-body .photo-menu .row .filters ul li a:hover {
+body .photo-menu .row .filters ul li a:hover,
+body .photo-menu .row .filters ul li .submit-form:hover {
   background: #FDFDFD;
   color: #d6ae7b;
 }
+body .photo-menu .row .filters ul .submit-li {
+  margin-top: 30px;
+}
+body .photo-menu .row .filters ul .submit-li input {
+  background: transparent;
+  color: #fdfdfd;
+  -webkit-appearance: none;
+  cursor: pointer;
+  margin: 33px auto 0 auto;
+  padding: 6px 12px;
+}
 body .photo-menu .row .filters ul .colors-filter {
   padding-left: 9px;
+  display: none;
   width: auto;
   text-align: left;
   margin: 0 auto;
