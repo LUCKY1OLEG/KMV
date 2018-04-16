@@ -542,20 +542,27 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 					}
 					.colors-filter {
 						padding-left: 9px;
-						display: none;
+						// display: none;
 						width: auto;
 						text-align: left;
 						margin: 0 auto;
 						.color-option {
-							background: red;
 							width: 36px;
 							height: 36px;
+							cursor: pointer;
 							border-radius: 50%;
 							margin: 10px 5px;
 							text-align: center;
 						}
-						form {
-							margin-left: 18px;
+						.color-checkbox {
+							display: none;
+						}
+						.color-clicked {
+							border: 2px dotted #fff;
+							&:first-child {
+								border: 2px dotted #000;
+							}
+						}
 							.css-checkbox {
 				            	position: absolute;
 				            	z-index: -1000;
@@ -595,7 +602,6 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 								position: relative;
 								top: 2px;
 							}
-						}
 					}
 				}
 			}

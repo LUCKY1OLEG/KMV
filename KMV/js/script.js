@@ -12,6 +12,7 @@ $(document).ready(function(){
     		$(this).parent().parent().parent().height( $(this).parent().parent().parent().height(parHeight - addHeight));
     	}
     });
+
     $(".photoblock").hover(function(){
         $(this).find('.like-cart').fadeIn(0); }, function() {
         if (
@@ -21,7 +22,16 @@ $(document).ready(function(){
         $(this).find('.like-cart').fadeOut(0);
         }
     });
+
     $(".like-cart").click(function(){
         $(this).toggleClass('liked');
     });
+
+    $(".color-option").click(function(){
+        $(this).toggleClass('color-clicked');
+        $(this).next('input').prop('checked', function (i, value) {
+        return !value;
+        });
+    });
+
 });

@@ -773,23 +773,28 @@ body .photo-menu .row .filters ul li a:hover {
 }
 body .photo-menu .row .filters ul .colors-filter {
   padding-left: 9px;
-  display: none;
   width: auto;
   text-align: left;
   margin: 0 auto;
 }
 body .photo-menu .row .filters ul .colors-filter .color-option {
-  background: red;
   width: 36px;
   height: 36px;
+  cursor: pointer;
   border-radius: 50%;
   margin: 10px 5px;
   text-align: center;
 }
-body .photo-menu .row .filters ul .colors-filter form {
-  margin-left: 18px;
+body .photo-menu .row .filters ul .colors-filter .color-checkbox {
+  display: none;
 }
-body .photo-menu .row .filters ul .colors-filter form .css-checkbox {
+body .photo-menu .row .filters ul .colors-filter .color-clicked {
+  border: 2px dotted #fff;
+}
+body .photo-menu .row .filters ul .colors-filter .color-clicked:first-child {
+  border: 2px dotted #000;
+}
+body .photo-menu .row .filters ul .colors-filter .css-checkbox {
   position: absolute;
   z-index: -1000;
   left: -1000px;
@@ -801,7 +806,7 @@ body .photo-menu .row .filters ul .colors-filter form .css-checkbox {
   padding: 0;
   border: 0;
 }
-body .photo-menu .row .filters ul .colors-filter form .css-checkbox + label.css-label {
+body .photo-menu .row .filters ul .colors-filter .css-checkbox + label.css-label {
   padding-left: 23px;
   height: 18px;
   display: inline-block;
@@ -811,10 +816,10 @@ body .photo-menu .row .filters ul .colors-filter form .css-checkbox + label.css-
   vertical-align: middle;
   cursor: pointer;
 }
-body .photo-menu .row .filters ul .colors-filter form .css-checkbox:checked + label.css-label {
+body .photo-menu .row .filters ul .colors-filter .css-checkbox:checked + label.css-label {
   background-position: 0 -18px;
 }
-body .photo-menu .row .filters ul .colors-filter form label.css-label {
+body .photo-menu .row .filters ul .colors-filter label.css-label {
   background-image: url(https://csscheckbox.com/checkboxes/u/csscheckbox_001aa7bf6327f8fac80e0eb160776ef4.png);
   -webkit-touch-callout: none;
   -webkit-user-select: none;
