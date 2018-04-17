@@ -280,6 +280,11 @@ body .navbar .navbar-collapse .navbar-nav li .dropdown-menu {
   margin-top: 11px;
   margin-left: -42px;
 }
+@media only screen and (max-width: 767px) {
+  body .navbar .navbar-collapse .navbar-nav li .dropdown-menu {
+    margin: 11px auto 0 auto;
+  }
+}
 body .navbar .navbar-collapse .navbar-nav li .dropdown-menu li {
   text-align: center;
 }
@@ -753,6 +758,14 @@ body .photo-menu .row .filters ul li {
   width: 200px;
   text-align: center;
 }
+@media only screen and (max-width: 575px) {
+  body .photo-menu .row .filters ul li div {
+    width: 243px;
+  }
+  body .photo-menu .row .filters ul li div .row {
+    padding-left: 5px;
+  }
+}
 body .photo-menu .row .filters ul li a,
 body .photo-menu .row .filters ul li .submit-form {
   border: 1px solid #FDFDFD;
@@ -784,14 +797,28 @@ body .photo-menu .row .filters ul .submit-li input {
   margin: 33px auto 0 auto;
   padding: 6px 12px;
 }
-body .photo-menu .row .filters ul .colors-filter {
+body .photo-menu .row .filters ul .filter {
   padding-left: 9px;
-  display: none;
   width: auto;
   text-align: left;
   margin: 0 auto;
 }
-body .photo-menu .row .filters ul .colors-filter .color-option {
+@media only screen and (max-width: 1199px) {
+  body .photo-menu .row .filters ul .filter {
+    padding-left: 27px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  body .photo-menu .row .filters ul .filter {
+    padding-left: 18px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  body .photo-menu .row .filters ul .filter {
+    padding-left: 0;
+  }
+}
+body .photo-menu .row .filters ul .filter .color-option {
   width: 36px;
   height: 36px;
   cursor: pointer;
@@ -799,16 +826,16 @@ body .photo-menu .row .filters ul .colors-filter .color-option {
   margin: 10px 5px;
   text-align: center;
 }
-body .photo-menu .row .filters ul .colors-filter .color-checkbox {
+body .photo-menu .row .filters ul .filter .color-checkbox {
   display: none;
 }
-body .photo-menu .row .filters ul .colors-filter .color-clicked {
+body .photo-menu .row .filters ul .filter .color-clicked {
   border: 2px dotted #fff;
 }
-body .photo-menu .row .filters ul .colors-filter .color-clicked:first-child {
+body .photo-menu .row .filters ul .filter .color-clicked:first-child {
   border: 2px dotted #000;
 }
-body .photo-menu .row .filters ul .colors-filter .css-checkbox {
+body .photo-menu .row .filters ul .filter .css-checkbox {
   position: absolute;
   z-index: -1000;
   left: -1000px;
@@ -820,7 +847,7 @@ body .photo-menu .row .filters ul .colors-filter .css-checkbox {
   padding: 0;
   border: 0;
 }
-body .photo-menu .row .filters ul .colors-filter .css-checkbox + label.css-label {
+body .photo-menu .row .filters ul .filter .css-checkbox + label.css-label {
   padding-left: 23px;
   height: 18px;
   display: inline-block;
@@ -830,10 +857,10 @@ body .photo-menu .row .filters ul .colors-filter .css-checkbox + label.css-label
   vertical-align: middle;
   cursor: pointer;
 }
-body .photo-menu .row .filters ul .colors-filter .css-checkbox:checked + label.css-label {
+body .photo-menu .row .filters ul .filter .css-checkbox:checked + label.css-label {
   background-position: 0 -18px;
 }
-body .photo-menu .row .filters ul .colors-filter label.css-label {
+body .photo-menu .row .filters ul .filter label.css-label {
   background-image: url(https://csscheckbox.com/checkboxes/u/csscheckbox_001aa7bf6327f8fac80e0eb160776ef4.png);
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -847,6 +874,17 @@ body .photo-menu .row .filters ul .colors-filter label.css-label {
   position: relative;
   top: 2px;
 }
+@media only screen and (max-width: 767px) {
+  body .photo-menu .row .filters ul .colors-filter {
+    width: 250px;
+    padding-left: 10px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  body .photo-menu .row .filters ul .colors-filter {
+    padding-left: 5px;
+  }
+}
 body .photo-menu .row .higher {
   height: 800px;
 }
@@ -858,7 +896,7 @@ body .photo-menu .row .filtered-photos h2 {
 body .photo-menu .row .filtered-photos .row .photoblock {
   height: 200px;
   width: 200px;
-  cursor: pointer;
+  cursor: zoom-in;
   background: url('img/insta5.jpg');
   margin: 0 auto 36px auto;
 }
