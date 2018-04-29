@@ -337,7 +337,6 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 					}
 					.footer-photos {
 						margin: 0 auto;
-						// max-width: 680px;
 						@media only screen and (max-width: 767px) {
 							display: none;
 						}
@@ -667,13 +666,16 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 						}
 						&:hover {
 							background-color: #000;
+							.like-cart {
+								visibility: visible;
+							}
 						}
 						.like-cart {
 							width: 27px;
 							height: 27px;
 							position: relative;
 							top: 170px;
-							display: none;
+							visibility: hidden;
 							background: url('img/hearty.png');
 							background-size: contain;
 							background-repeat: no-repeat;
@@ -683,7 +685,7 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 						}
 						.liked {
 							opacity: 1;
-							display: block;
+							visibility: visible;
 						}
 					}
 				}

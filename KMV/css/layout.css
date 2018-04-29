@@ -721,12 +721,15 @@ body .photo-menu .row .filtered-photos .row .photoblock img {
 body .photo-menu .row .filtered-photos .row .photoblock:hover {
   background-color: #000;
 }
+body .photo-menu .row .filtered-photos .row .photoblock:hover .like-cart {
+  visibility: visible;
+}
 body .photo-menu .row .filtered-photos .row .photoblock .like-cart {
   width: 27px;
   height: 27px;
   position: relative;
   top: 170px;
-  display: none;
+  visibility: hidden;
   background: url('img/hearty.png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -736,5 +739,5 @@ body .photo-menu .row .filtered-photos .row .photoblock .like-cart {
 }
 body .photo-menu .row .filtered-photos .row .photoblock .liked {
   opacity: 1;
-  display: block;
+  visibility: visible;
 }

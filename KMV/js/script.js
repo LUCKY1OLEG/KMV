@@ -13,15 +13,15 @@ $(document).ready(function(){
     	// }
     });
 
-    $(".photoblock").hover(function(){
-        $(this).find('.like-cart').fadeIn(0); }, function() {
-        if (
-            $(this).find('.like-cart').hasClass('liked')
-        ) {}
-        else{
-        $(this).find('.like-cart').fadeOut(0);
-        }
-    });
+    // $(".photoblock").hover(function(){
+    //     $(this).find('.like-cart').fadeIn(1); }, function() {
+    //     if (
+    //         $(this).find('.like-cart').hasClass('liked')
+    //     ) {}
+    //     else{
+    //     $(this).find('.like-cart').fadeOut(1);
+    //     }
+    // });
 
     $(".like-cart").click(function(){
         $(this).toggleClass('liked');
