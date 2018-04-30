@@ -692,4 +692,102 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 			}
 		}
 	}
+	.kontaktai-fluid {
+		margin: 60px 0;
+		.kontaktai-container {
+			.kontaktai-block {
+				color: #939598;
+				font-family: "Open Sans", sans-serif;
+				font-weight: 100;
+				h1 {
+					font-family: 'Sorts Mill Goudy', serif;
+				}
+				p {
+					margin: 15px 0 18px 0;
+					// font-family: 'Sorts Mill Goudy', serif;
+				}
+				.contact-links {
+					.contact-email, .contact-number {
+						margin-top: 3px;
+						max-width: 140px;
+						display: block;
+					}
+					.contact-number {
+						margin-bottom: 18px;
+					}
+				}
+			}
+			.forma-block {
+				// background: url('img/vokas.jpg');
+				background-size: contain;
+				background-repeat: no-repeat;
+				height: 580px;
+				.contact-form-div {
+					// margin-top: 60px;
+					font-family: "Open Sans", sans-serif;
+					font-weight: 100;
+					form {
+						-webkit-font-smoothing: antialiased;
+						input, textarea {
+							border-radius: 3px;
+							margin: 5 0 10px 0;
+							min-height: 40px;
+							font-size: 16px;
+							color: #1B3F8B;
+							letter-spacing: 1px;
+							border: 1px solid lightgrey;
+							background-color: #fdfdfd;
+							&:hover {
+								border-style: solid;
+							}
+							&:focus {
+							}
+							&::placeholder {
+								color: #939598;
+								font-family: "Open Sans", sans-serif;
+								font-weight: 100;
+							}
+						}
+						label {
+							text-transform: uppercase;
+							margin-top: 10px;
+							font-size: 14px;
+							font-family: 'Sorts Mill Goudy', serif;
+							color: #939598;
+							margin-bottom: 0;
+						}
+						.message-input {
+							height: 130px;
+							padding-top: 10px;
+							text-align: justify;
+							@media only screen and (max-width: 767px) {
+								line-height: 18px;
+								height: 200px;
+							} 
+							&:focus {
+							}
+						}
+						button {
+							border: 1px solid lightgrey;
+							text-transform: uppercase;
+							padding: 5px 45px 1px 45px;
+							font-size: 14px;
+							font-family: 'Sorts Mill Goudy', serif;
+							border-radius: 3px;
+							margin-bottom: 20px;
+							display: block;
+							margin: 0 auto;
+							margin-top: 10px;
+							color: #939598;
+							background-color: #fefefe;
+							letter-spacing: 1px;
+							&:hover {
+								border-style: solid;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }

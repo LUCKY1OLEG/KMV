@@ -741,3 +741,96 @@ body .photo-menu .row .filtered-photos .row .photoblock .liked {
   opacity: 1;
   visibility: visible;
 }
+body .kontaktai-fluid {
+  margin: 60px 0;
+}
+body .kontaktai-fluid .kontaktai-container .kontaktai-block {
+  color: #939598;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+}
+body .kontaktai-fluid .kontaktai-container .kontaktai-block h1 {
+  font-family: 'Sorts Mill Goudy', serif;
+}
+body .kontaktai-fluid .kontaktai-container .kontaktai-block p {
+  margin: 15px 0 18px 0;
+}
+body .kontaktai-fluid .kontaktai-container .kontaktai-block .contact-links .contact-email,
+body .kontaktai-fluid .kontaktai-container .kontaktai-block .contact-links .contact-number {
+  margin-top: 3px;
+  max-width: 140px;
+  display: block;
+}
+body .kontaktai-fluid .kontaktai-container .kontaktai-block .contact-links .contact-number {
+  margin-bottom: 18px;
+}
+body .kontaktai-fluid .kontaktai-container .forma-block {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 580px;
+}
+body .kontaktai-fluid .kontaktai-container .forma-block .contact-form-div {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+}
+body .kontaktai-fluid .kontaktai-container .forma-block .contact-form-div form {
+  -webkit-font-smoothing: antialiased;
+}
+body .kontaktai-fluid .kontaktai-container .forma-block .contact-form-div form input,
+body .kontaktai-fluid .kontaktai-container .forma-block .contact-form-div form textarea {
+  border-radius: 3px;
+  margin: 5 0 10px 0;
+  min-height: 40px;
+  font-size: 16px;
+  color: #1B3F8B;
+  letter-spacing: 1px;
+  border: 1px solid lightgrey;
+  background-color: #fdfdfd;
+}
+body .kontaktai-fluid .kontaktai-container .forma-block .contact-form-div form input:hover,
+body .kontaktai-fluid .kontaktai-container .forma-block .contact-form-div form textarea:hover {
+  border-style: solid;
+}
+body .kontaktai-fluid .kontaktai-container .forma-block .contact-form-div form input::placeholder,
+body .kontaktai-fluid .kontaktai-container .forma-block .contact-form-div form textarea::placeholder {
+  color: #939598;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+}
+body .kontaktai-fluid .kontaktai-container .forma-block .contact-form-div form label {
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-size: 14px;
+  font-family: 'Sorts Mill Goudy', serif;
+  color: #939598;
+  margin-bottom: 0;
+}
+body .kontaktai-fluid .kontaktai-container .forma-block .contact-form-div form .message-input {
+  height: 130px;
+  padding-top: 10px;
+  text-align: justify;
+}
+@media only screen and (max-width: 767px) {
+  body .kontaktai-fluid .kontaktai-container .forma-block .contact-form-div form .message-input {
+    line-height: 18px;
+    height: 200px;
+  }
+}
+body .kontaktai-fluid .kontaktai-container .forma-block .contact-form-div form button {
+  border: 1px solid lightgrey;
+  text-transform: uppercase;
+  padding: 5px 45px 1px 45px;
+  font-size: 14px;
+  font-family: 'Sorts Mill Goudy', serif;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  color: #939598;
+  background-color: #fefefe;
+  letter-spacing: 1px;
+}
+body .kontaktai-fluid .kontaktai-container .forma-block .contact-form-div form button:hover {
+  border-style: solid;
+}
