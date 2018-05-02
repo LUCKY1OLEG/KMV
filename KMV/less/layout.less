@@ -307,7 +307,6 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 					h4 {
 						letter-spacing: 2px;
 						color: #808080;
-						font-family: "Open Sans", sans-serif;
 						font-family: 'Sorts Mill Goudy', serif;
 						font-weight: 100;
 						padding-bottom: 10px;
@@ -352,6 +351,10 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 						@media only screen and (max-width: 1199px) {
 							display: none;
 						}
+						.developer {
+							margin: 5px;
+							color: #033F96;
+						}
 						p {
 							font-family: "Open Sans", sans-serif;
 							font-weight: 100;
@@ -364,10 +367,7 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 									display: block;
 									margin-left: 0;
 								}
-								a {
-									margin: 5px;
-								}
-							}	
+							}
 						}
 					}
 				}
@@ -378,7 +378,6 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 						color: #808080;
 						position: relative;
 						top: 15px;
-						font-family: 'Open Sans', sans-serif;
 						font-family: 'Sorts Mill Goudy', serif;
 						font-weight: 100;
 						letter-spacing: 2px;
@@ -400,6 +399,9 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 							span {
 								color: #808080;
 								margin-right: 10px;
+							}
+							a {
+								color: #033F96;
 							}
 						}
 					}
@@ -425,12 +427,16 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 							}
 						}
 					}
-					.copyright {
+					.copyright-mobile {
 						margin-top: 45px;
 						font-family: "Open Sans", sans-serif;
 						font-weight: 100;
 						@media only screen and (min-width: 1200px) {
 							display: none;
+						}
+						.developer {
+							margin: 5px;
+							color: #033F96;
 						}
 					}
 				}
@@ -696,20 +702,23 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 		margin: 60px 0;
 		.kontaktai-container {
 			.kontaktai-block {
-				color: #939598;
+				color: #808080;
 				font-family: "Open Sans", sans-serif;
 				font-weight: 100;
 				h1 {
 					font-family: 'Sorts Mill Goudy', serif;
+					text-align: center;
 				}
 				p {
 					margin: 15px 0 18px 0;
-					// font-family: 'Sorts Mill Goudy', serif;
+				}
+				a {
+					color: #033F96;
 				}
 				.contact-links {
 					.contact-email, .contact-number {
 						margin-top: 3px;
-						max-width: 140px;
+						max-width: 180px;
 						display: block;
 					}
 					.contact-number {
@@ -718,12 +727,7 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 				}
 			}
 			.forma-block {
-				// background: url('img/vokas.jpg');
-				background-size: contain;
-				background-repeat: no-repeat;
-				height: 580px;
 				.contact-form-div {
-					// margin-top: 60px;
 					font-family: "Open Sans", sans-serif;
 					font-weight: 100;
 					form {
@@ -733,12 +737,14 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 							margin: 5 0 10px 0;
 							min-height: 40px;
 							font-size: 16px;
-							color: #1B3F8B;
+							color: #808080;
 							letter-spacing: 1px;
 							border: 1px solid lightgrey;
 							background-color: #fdfdfd;
+							resize: none;
 							&:hover {
 								border-style: solid;
+								border: 1px solid #808080;
 							}
 							&:focus {
 							}
@@ -750,10 +756,10 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 						}
 						label {
 							text-transform: uppercase;
+							color: #808080;
 							margin-top: 10px;
 							font-size: 14px;
 							font-family: 'Sorts Mill Goudy', serif;
-							color: #939598;
 							margin-bottom: 0;
 						}
 						.message-input {
@@ -768,7 +774,7 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 							}
 						}
 						button {
-							border: 1px solid lightgrey;
+							border: 1px solid #eacda3;
 							text-transform: uppercase;
 							padding: 5px 45px 1px 45px;
 							font-size: 14px;
@@ -781,10 +787,37 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 							color: #939598;
 							background-color: #fefefe;
 							letter-spacing: 1px;
+							-webkit-transition: background 300ms linear, color 300ms linear;
+							-moz-transition: background 300ms linear, color 300ms linear;
+							-o-transition: background 300ms linear, color 300ms linear;
+							-ms-transition: background 300ms linear, color 300ms linear;
+							transition: background 300ms linear, color 300ms linear;
 							&:hover {
-								border-style: solid;
+								text-decoration: none;
+								background: #eacda3;
+								color: #FDFDFD;
 							}
 						}
+					}
+				}
+			}
+		}
+		.liked-container {
+			margin-top: 63px;
+			h2 {
+				color: #808080;
+				text-align: center;
+				font-family: 'Sorts Mill Goudy', serif;
+				margin-bottom: 18px;
+				i {
+					color: #eacda3;
+				}
+			}
+			.row {
+				@media only screen and (max-width: 767px) {
+					margin: 0 auto;
+					.photoblock {
+						margin: 5px auto;
 					}
 				}
 			}

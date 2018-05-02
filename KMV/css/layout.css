@@ -337,7 +337,6 @@ body .footer-fluid .footer-container .row .footer-left .line {
 body .footer-fluid .footer-container .row .footer-left h4 {
   letter-spacing: 2px;
   color: #808080;
-  font-family: "Open Sans", sans-serif;
   font-family: 'Sorts Mill Goudy', serif;
   font-weight: 100;
   padding-bottom: 10px;
@@ -391,6 +390,10 @@ body .footer-fluid .footer-container .row .footer-left .copyright {
     display: none;
   }
 }
+body .footer-fluid .footer-container .row .footer-left .copyright .developer {
+  margin: 5px;
+  color: #033F96;
+}
 body .footer-fluid .footer-container .row .footer-left .copyright p {
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
@@ -407,9 +410,6 @@ body .footer-fluid .footer-container .row .footer-left .copyright p span {
     margin-left: 0;
   }
 }
-body .footer-fluid .footer-container .row .footer-left .copyright p span a {
-  margin: 5px;
-}
 body .footer-fluid .footer-container .row .footer-right {
   background-color: #FDFDFD;
 }
@@ -418,7 +418,6 @@ body .footer-fluid .footer-container .row .footer-right h4 {
   color: #808080;
   position: relative;
   top: 15px;
-  font-family: 'Open Sans', sans-serif;
   font-family: 'Sorts Mill Goudy', serif;
   font-weight: 100;
   letter-spacing: 2px;
@@ -447,6 +446,9 @@ body .footer-fluid .footer-container .row .footer-right .contacts .contact span 
   color: #808080;
   margin-right: 10px;
 }
+body .footer-fluid .footer-container .row .footer-right .contacts .contact a {
+  color: #033F96;
+}
 body .footer-fluid .footer-container .row .footer-right .contact-now {
   margin-top: 45px;
   text-align: center;
@@ -469,15 +471,19 @@ body .footer-fluid .footer-container .row .footer-right .contact-now a:hover {
   background: #eacda3;
   color: #FDFDFD;
 }
-body .footer-fluid .footer-container .row .footer-right .copyright {
+body .footer-fluid .footer-container .row .footer-right .copyright-mobile {
   margin-top: 45px;
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
 }
 @media only screen and (min-width: 1200px) {
-  body .footer-fluid .footer-container .row .footer-right .copyright {
+  body .footer-fluid .footer-container .row .footer-right .copyright-mobile {
     display: none;
   }
+}
+body .footer-fluid .footer-container .row .footer-right .copyright-mobile .developer {
+  margin: 5px;
+  color: #033F96;
 }
 body .intro-ivaizdis {
   background-image: url("img/dekoras.jpg");
@@ -745,29 +751,28 @@ body .kontaktai-fluid {
   margin: 60px 0;
 }
 body .kontaktai-fluid .kontaktai-container .kontaktai-block {
-  color: #939598;
+  color: #808080;
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
 }
 body .kontaktai-fluid .kontaktai-container .kontaktai-block h1 {
   font-family: 'Sorts Mill Goudy', serif;
+  text-align: center;
 }
 body .kontaktai-fluid .kontaktai-container .kontaktai-block p {
   margin: 15px 0 18px 0;
 }
+body .kontaktai-fluid .kontaktai-container .kontaktai-block a {
+  color: #033F96;
+}
 body .kontaktai-fluid .kontaktai-container .kontaktai-block .contact-links .contact-email,
 body .kontaktai-fluid .kontaktai-container .kontaktai-block .contact-links .contact-number {
   margin-top: 3px;
-  max-width: 140px;
+  max-width: 180px;
   display: block;
 }
 body .kontaktai-fluid .kontaktai-container .kontaktai-block .contact-links .contact-number {
   margin-bottom: 18px;
-}
-body .kontaktai-fluid .kontaktai-container .forma-block {
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 580px;
 }
 body .kontaktai-fluid .kontaktai-container .forma-block .contact-form-div {
   font-family: "Open Sans", sans-serif;
@@ -782,14 +787,16 @@ body .kontaktai-fluid .kontaktai-container .forma-block .contact-form-div form t
   margin: 5 0 10px 0;
   min-height: 40px;
   font-size: 16px;
-  color: #1B3F8B;
+  color: #808080;
   letter-spacing: 1px;
   border: 1px solid lightgrey;
   background-color: #fdfdfd;
+  resize: none;
 }
 body .kontaktai-fluid .kontaktai-container .forma-block .contact-form-div form input:hover,
 body .kontaktai-fluid .kontaktai-container .forma-block .contact-form-div form textarea:hover {
   border-style: solid;
+  border: 1px solid #808080;
 }
 body .kontaktai-fluid .kontaktai-container .forma-block .contact-form-div form input::placeholder,
 body .kontaktai-fluid .kontaktai-container .forma-block .contact-form-div form textarea::placeholder {
@@ -799,10 +806,10 @@ body .kontaktai-fluid .kontaktai-container .forma-block .contact-form-div form t
 }
 body .kontaktai-fluid .kontaktai-container .forma-block .contact-form-div form label {
   text-transform: uppercase;
+  color: #808080;
   margin-top: 10px;
   font-size: 14px;
   font-family: 'Sorts Mill Goudy', serif;
-  color: #939598;
   margin-bottom: 0;
 }
 body .kontaktai-fluid .kontaktai-container .forma-block .contact-form-div form .message-input {
@@ -817,7 +824,7 @@ body .kontaktai-fluid .kontaktai-container .forma-block .contact-form-div form .
   }
 }
 body .kontaktai-fluid .kontaktai-container .forma-block .contact-form-div form button {
-  border: 1px solid lightgrey;
+  border: 1px solid #eacda3;
   text-transform: uppercase;
   padding: 5px 45px 1px 45px;
   font-size: 14px;
@@ -830,7 +837,34 @@ body .kontaktai-fluid .kontaktai-container .forma-block .contact-form-div form b
   color: #939598;
   background-color: #fefefe;
   letter-spacing: 1px;
+  -webkit-transition: background 300ms linear, color 300ms linear;
+  -moz-transition: background 300ms linear, color 300ms linear;
+  -o-transition: background 300ms linear, color 300ms linear;
+  -ms-transition: background 300ms linear, color 300ms linear;
+  transition: background 300ms linear, color 300ms linear;
 }
 body .kontaktai-fluid .kontaktai-container .forma-block .contact-form-div form button:hover {
-  border-style: solid;
+  text-decoration: none;
+  background: #eacda3;
+  color: #FDFDFD;
+}
+body .kontaktai-fluid .liked-container {
+  margin-top: 63px;
+}
+body .kontaktai-fluid .liked-container h2 {
+  color: #808080;
+  text-align: center;
+  font-family: 'Sorts Mill Goudy', serif;
+  margin-bottom: 18px;
+}
+body .kontaktai-fluid .liked-container h2 i {
+  color: #eacda3;
+}
+@media only screen and (max-width: 767px) {
+  body .kontaktai-fluid .liked-container .row {
+    margin: 0 auto;
+  }
+  body .kontaktai-fluid .liked-container .row .photoblock {
+    margin: 5px auto;
+  }
 }
