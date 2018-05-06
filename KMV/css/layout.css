@@ -485,7 +485,7 @@ body .footer-fluid .footer-container .row .footer-right .copyright-mobile .devel
   margin: 5px;
   color: #033F96;
 }
-body .intro-ivaizdis {
+body .intro {
   background-image: url("img/dekoras.jpg");
   min-height: 630px;
   background-attachment: fixed;
@@ -494,7 +494,7 @@ body .intro-ivaizdis {
   background-size: cover;
   padding-top: 110px;
 }
-body .intro-ivaizdis .intro-block {
+body .intro .intro-block {
   padding-bottom: 45px;
   margin-top: 45px;
   opacity: 0.95;
@@ -502,7 +502,7 @@ body .intro-ivaizdis .intro-block {
   background: -webkit-linear-gradient(to right, #d6ae7b, #eacda3);
   background: linear-gradient(to right, #d6ae7b, #eacda3);
 }
-body .intro-ivaizdis .intro-block h1 {
+body .intro .intro-block h1 {
   padding-top: 45px;
   font-family: 'Sorts Mill Goudy', serif;
   color: #FDFDFD;
@@ -510,16 +510,16 @@ body .intro-ivaizdis .intro-block h1 {
   font-size: 33px;
 }
 @media only screen and (max-width: 767px) {
-  body .intro-ivaizdis .intro-block h1 {
+  body .intro .intro-block h1 {
     font-size: 26px;
   }
 }
 @media only screen and (max-width: 767px) {
-  body .intro-ivaizdis .intro-block h1 {
+  body .intro .intro-block h1 {
     font-size: 24px;
   }
 }
-body .intro-ivaizdis .intro-block p {
+body .intro .intro-block p {
   padding-top: 24px;
   text-align: center;
   color: #FDFDFD;
@@ -527,15 +527,15 @@ body .intro-ivaizdis .intro-block p {
   font-family: 'Raleway', sans-serif;
 }
 @media only screen and (max-width: 767px) {
-  body .intro-ivaizdis .intro-block p {
+  body .intro .intro-block p {
     font-size: 24px;
   }
 }
-body .intro-ivaizdis .intro-block .ivaizdis-start {
+body .intro .intro-block .ivaizdis-start {
   text-align: center;
   padding-top: 36px;
 }
-body .intro-ivaizdis .intro-block .ivaizdis-start a {
+body .intro .intro-block .ivaizdis-start a {
   font-size: 18px;
   text-align: center;
   color: #FDFDFD;
@@ -549,15 +549,58 @@ body .intro-ivaizdis .intro-block .ivaizdis-start a {
   transition: background 300ms linear, color 300ms linear;
 }
 @media only screen and (max-width: 767px) {
-  body .intro-ivaizdis .intro-block .ivaizdis-start a {
+  body .intro .intro-block .ivaizdis-start a {
     font-size: 27px;
   }
 }
-body .intro-ivaizdis .intro-block .ivaizdis-start a:hover {
+body .intro .intro-block .ivaizdis-start a:hover {
   text-decoration: none;
   background-color: #FDFDFD;
   color: #d6ae7b;
   border: none;
+}
+body .intro-kontaktai {
+  background: url("img/vestuves.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body .intro-vizija {
+  background: url("img/karolina.jpg");
+  background-repeat: no-repeat;
+  background-position-y: -60px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body .intro-vizija h1,
+body .intro-vizija p {
+  font-size: 129px;
+  color: #fff;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 10vh;
+}
+body .intro-vizija p {
+  font-size: 27px;
+}
+body .intro-galerija {
+  background: url("img/musu-poros.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body .intro-galerija .our-couples {
+  margin-top: 12vh;
+}
+body .intro-galerija .our-couples h1,
+body .intro-galerija .our-couples p {
+  font-size: 129px;
+  color: #fff;
+  font-weight: 100;
+  text-align: center;
+}
+body .intro-galerija .our-couples p {
+  font-size: 27px;
 }
 body .photo-menu {
   margin-top: 70px;
@@ -867,4 +910,65 @@ body .kontaktai-fluid .liked-container h2 i {
   body .kontaktai-fluid .liked-container .row .photoblock {
     margin: 5px auto;
   }
+}
+body .galerija-fluid {
+  padding-top: 70px;
+}
+body .galerija-fluid .galerija-container .galerija-photos h2 {
+  text-align: center;
+  color: #939598;
+  font-family: 'Sorts Mill Goudy', serif;
+}
+body .galerija-fluid .galerija-container .galerija-photos .row .couple-block {
+  height: 200px;
+  width: 200px;
+  cursor: zoom-in;
+  margin: 0 auto 36px auto;
+  display: table;
+}
+body .galerija-fluid .galerija-container .galerija-photos .row .couple-block img {
+  width: 200px;
+  position: absolute;
+}
+body .galerija-fluid .galerija-container .galerija-photos .row .couple-block .couple-name {
+  display: table-cell;
+  vertical-align: middle;
+}
+body .galerija-fluid .galerija-container .galerija-photos .row .couple-block .couple-name p {
+  position: relative;
+  z-index: 99;
+  font-family: 'Sorts Mill Goudy', serif;
+  font-weight: 100;
+  text-align: center;
+  font-size: 18px;
+  color: #FFF;
+  padding: 0 5px;
+  visibility: hidden;
+}
+body .galerija-fluid .galerija-container .galerija-photos .row .couple-block .couple-name p span {
+  font-family: "Open Sans", sans-serif;
+  display: block;
+  font-size: 15px;
+}
+body .galerija-fluid .galerija-container .galerija-photos .row .couple-block:hover {
+  background-color: #000;
+}
+body .galerija-fluid .galerija-container .galerija-photos .row .couple-block:hover img {
+  opacity: 0.36;
+}
+body .galerija-fluid .galerija-container .galerija-photos .row .couple-block:hover p {
+  visibility: visible;
+}
+body .vizija-fluid .vizija-container h2 {
+  font-family: 'Sorts Mill Goudy', serif;
+  text-align: center;
+}
+body .vizija-fluid .vizija-container span {
+  display: block;
+  text-align: right;
+  font-weight: bold;
+  margin-top: 18px;
+}
+body .vizija-fluid .vizija-container .vizija-text {
+  margin-top: 63px;
 }

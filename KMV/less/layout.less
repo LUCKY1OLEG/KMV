@@ -443,7 +443,7 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 			}
 		}
 	}
-	.intro-ivaizdis {
+	.intro {
 		background-image: url("img/dekoras.jpg");
 	    min-height: 630px;
 	    background-attachment: fixed;
@@ -512,11 +512,51 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 			}
 	    }
 	}
+	.intro-kontaktai {
+		background: url("img/vestuves.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+	.intro-vizija {
+		background: url("img/karolina.jpg");
+		background-repeat: no-repeat;
+		background-position-y: -60px;
+		background-size: cover;
+		background-attachment: fixed;
+		h1, p {
+			font-size: 129px;
+			color: #fff;
+			font-weight: 100; 
+			text-align: center;
+			margin-top: 10vh;
+		}
+		p {
+			font-size: 27px;
+		}
+	}
+	.intro-galerija {
+		background: url("img/musu-poros.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		.our-couples {
+			margin-top: 12vh;
+			h1, p {
+				font-size: 129px;
+				color: #fff;
+				font-weight: 100; 
+				text-align: center;
+			}
+			p {
+				font-size: 27px;
+			}
+		}
+	}
 	.photo-menu {
 		margin-top: 70px;
 		margin-bottom: 70px;
 		.row {
-
 			.filters {
 				margin-top: 18px;
 				padding-top: 27px;
@@ -820,6 +860,82 @@ background: linear-gradient(to right, #d6ae7b, #eacda3);
 						margin: 5px auto;
 					}
 				}
+			}
+		}
+	}
+
+	.galerija-fluid {
+		padding-top: 70px;
+		.galerija-container {
+			.galerija-photos {
+				h2 {
+					text-align: center;
+					color: #939598;
+					font-family: 'Sorts Mill Goudy', serif;
+				}
+				.row {
+					.couple-block {
+						height: 200px;
+						width: 200px;
+						cursor: zoom-in;
+						margin: 0 auto 36px auto;
+						display: table;
+						img {
+							width: 200px;
+							position: absolute;
+						}
+						.couple-name {
+							display: table-cell;
+							vertical-align: middle;
+							p {
+								position: relative;
+								z-index: 99;
+								font-family: 'Sorts Mill Goudy', serif;
+								font-weight: 100;
+								text-align: center;
+								font-size: 18px;
+								color: #FFF;
+								// text-transform: uppercase;
+								padding: 0 5px;
+								visibility: hidden;
+								span {
+									font-family: "Open Sans", sans-serif;
+									display: block;
+									font-size: 15px;
+								}
+							}
+						}
+						&:hover {
+							background-color: #000;
+							img {
+								opacity: 0.36;
+							}
+							p {
+								visibility: visible;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.vizija-fluid {
+		.vizija-container {
+			h2 {
+				font-family: 'Sorts Mill Goudy', serif;
+				text-align: center;
+			}
+			p {
+
+			}
+			span {
+				display: block;
+				text-align: right;
+				font-weight: bold;
+				margin-top: 18px;
+			}
+			.vizija-text {
+				margin-top: 63px;
 			}
 		}
 	}
