@@ -4,17 +4,7 @@ $(document).ready(function(){
     	e.preventDefault();
     	$(this).parent().next('li').slideToggle(270);
     });
-
-    // $(".photoblock").hover(function(){
-    //     $(this).find('.like-cart').fadeIn(1); }, function() {
-    //     if (
-    //         $(this).find('.like-cart').hasClass('liked')
-    //     ) {}
-    //     else{
-    //     $(this).find('.like-cart').fadeOut(1);
-    //     }
-    // });
-
+    
     $(".like-cart").click(function(){
         $(this).toggleClass('liked');
     });
