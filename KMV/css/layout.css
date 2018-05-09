@@ -1040,4 +1040,37 @@ body .paslaugos-fluid .paslaugos-container .paslaugos-info span {
 }
 body .intro-komanda {
   padding-top: 0;
+  background: url('img/vestuviu-organizatores.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: -50px;
+  background-size: cover;
+  height: 800px;
+}
+body .komanda-fluid .komanda-container .row h2 {
+  text-align: center;
+  font-family: 'Sorts Mill Goudy', serif;
+  margin: 30px 0 54px;
+  color: #808080;
+}
+body .komanda-fluid .komanda-container .row .apie-komanda {
+  margin-bottom: 36px;
+}
+body .komanda-fluid .komanda-container .row .apie-komanda .row p {
+  line-height: 34px;
+}
+body .komanda-fluid .komanda-container .row .apie-komanda .row img {
+  max-height: 670px;
+}
+body .komanda-fluid .komanda-container .row .apie-komanda .komanda-info {
+  margin-top: 36px;
+}
+body .komanda-fluid .komanda-container .komanda-photo {
+  margin: 30px auto;
+  text-align: center;
+  padding-bottom: 72px;
+}
+body .komanda-fluid .komanda-container .komanda-photo img {
+  max-height: 400px;
+  margin-top: 4px;
 }
