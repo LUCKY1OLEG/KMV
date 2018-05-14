@@ -967,24 +967,30 @@ body .intro-vizija h1 {
 body .intro-vizija p {
   font-size: 27px;
 }
-body .vizija-fluid .vizija-container {
+body .vizija-container {
   margin-bottom: 63px;
 }
-body .vizija-fluid .vizija-container h2 {
+body .vizija-container h2 {
   font-family: 'Sorts Mill Goudy', serif;
   text-align: center;
   margin-bottom: 36px;
   color: #808080;
 }
-body .vizija-fluid .vizija-container p {
+body .vizija-container p {
   text-align: justify;
   padding: 0 10px;
   color: #707070;
 }
-body .vizija-fluid .vizija-container p .name-span {
+body .vizija-container p .name-span {
   font-weight: 600;
 }
-body .vizija-fluid .vizija-container .karolina-letter {
+@media only screen and (max-width: 767px) {
+  body .vizija-container .musu-istorija,
+  body .vizija-container .musu-misija {
+    padding: 0;
+  }
+}
+body .vizija-container .karolina-letter {
   display: block;
   text-align: right;
   font-weight: bold;
@@ -992,7 +998,7 @@ body .vizija-fluid .vizija-container .karolina-letter {
   font-family: 'Sorts Mill Goudy', serif;
   margin-top: 18px;
 }
-body .vizija-fluid .vizija-container .vizija-text {
+body .vizija-container .vizija-text {
   margin-top: 63px;
 }
 body .intro-paslaugos {
@@ -1024,6 +1030,11 @@ body .paslaugos-fluid .paslaugos-container h2 {
   font-family: 'Sorts Mill Goudy', serif;
   margin: 54px 0;
   color: #808080;
+}
+@media only screen and (max-width: 767px) {
+  body .paslaugos-fluid .paslaugos-container h2 {
+    font-size: 27px;
+  }
 }
 body .paslaugos-fluid .paslaugos-container p {
   color: #707070;
@@ -1057,10 +1068,11 @@ body .komanda-fluid .komanda-container .row .apie-komanda {
   margin-bottom: 36px;
 }
 body .komanda-fluid .komanda-container .row .apie-komanda .row p {
-  line-height: 34px;
+  line-height: 32px;
 }
 body .komanda-fluid .komanda-container .row .apie-komanda .row img {
   max-height: 670px;
+  max-width: 100%;
 }
 body .komanda-fluid .komanda-container .row .apie-komanda .komanda-info {
   margin-top: 36px;
@@ -1073,4 +1085,5 @@ body .komanda-fluid .komanda-container .komanda-photo {
 body .komanda-fluid .komanda-container .komanda-photo img {
   max-height: 400px;
   margin-top: 4px;
+  max-width: 100%;
 }
