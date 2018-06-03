@@ -17,3 +17,17 @@ $(document).ready(function(){
     });
 
 });
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 1400) {
+        $('#toTop').fadeIn();
+    } else {
+        $('#toTop').fadeOut();
+    }
+});
+
+$("#toTop").click(function(e){
+    event.preventDefault();
+    $('html,body').animate({
+    scrollTop: $(".photo-menu").offset().top}, 500);
+    });

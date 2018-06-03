@@ -200,6 +200,34 @@ body {
 			}
 		}
 	}
+	.to-top {
+		a {
+			color: #808080;
+			padding: 4px 10px;
+			border-radius: 50%;
+			background: #eacda3;
+			color: #fff;
+			border: 1px solid #eacda3;
+			font-family: "Open Sans", sans-serif;
+			position: fixed;
+			bottom: 14px;
+			right: 14px;
+			z-index: 999;
+			display: none;
+			font-weight: 100;
+			letter-spacing: 1px;
+			-webkit-transition: background 300ms linear, color 300ms linear;
+			-moz-transition: background 300ms linear, color 300ms linear;
+			-o-transition: background 300ms linear, color 300ms linear;
+			-ms-transition: background 300ms linear, color 300ms linear;
+			transition: background 300ms linear, color 300ms linear;
+			&:hover {
+				text-decoration: none;
+				background: #fff;
+				color: #eacda3;
+			}
+		}
+	}
 	.parallax-block {
 		background-image: url("img/poros-bucinys.jpg");
 		min-height: 777px;
