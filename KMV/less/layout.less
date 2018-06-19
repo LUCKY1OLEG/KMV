@@ -236,8 +236,9 @@ body {
 		background-repeat: no-repeat;
 		background-size: cover;
 		margin-bottom: 90px;
-		@media only screen and (max-width: 575px) {
+		@media only screen and (max-width: 767px) {
 			margin-bottom: 0;
+			min-height: 0;
 		}
 		.poros-block {
 			height: 600px;
@@ -246,8 +247,8 @@ body {
 			background: -webkit-linear-gradient(to right, #d6ae7b, #eacda3);
 			background: linear-gradient(to right, #d6ae7b, #eacda3);
 			opacity: 0.9;
-			@media only screen and (max-width: 575px) {
-				margin-top: 180px;
+			@media only screen and (max-width: 767px) {
+				margin-top: 0;
 			}
 			h2,
 			h3 {
@@ -552,41 +553,70 @@ body {
 	}
 	.intro-kontaktai {
 		background: url("img/vestuves.jpg");
+		padding-top: 0;
 		background-repeat: no-repeat;
-		background-size: cover;
-		background-attachment: fixed;
-		@media only screen and (max-width: 767px) {
-			padding-bottom: 55%;
-			background-position: center;
-		}
+		background-position: center;
+		background-size: contain;
+		padding-bottom: 55.64%;
+		min-height: 0;
+		width: 100%;
 	}
 	.intro-galerija {
 		background: url("img/musu-poros.jpg");
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-attachment: fixed;
-		display: table;
+		background-position: center;
+		display: flex;
+		align-items: center;
+		background-repeat: no-repeat;
+		justify-content: center;
 		width: 100%;
+		max-width: 1400px;
 		margin: 0 auto;
 		text-align: center;
 		padding: 0;
+		@media only screen and (max-width: 991px) {
+			background: url("img/musu-poros.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			width: 100%;
+			max-width: 1400px;
+			margin: 0 auto;
+			text-align: center;
+			padding: 0;
+			background-size: contain;
+			min-height: 0;
+			height: 400px;
+		}
+		@media only screen and (max-width: 767px) {
+			height: 300px;
+			background-size: cover;
+		}
 		.our-couples {
-			display: table-cell;
-			vertical-align: middle;
+			text-align: center;
+			margin: 0 auto;
 			h1,
 			p {
-				font-size: 129px;
 				color: #fff;
 				font-weight: 100;
 				text-align: center;
+				font-family: 'Raleway', sans-serif;
 			}
 			h1 {
-				@media only screen and (max-width: 767px) {
-					font-size: 72px;
+				font-size: 129px;
+				vertical-align: middle;
+				font-weight: 100;
+				@media only screen and (max-width: 991px) {
+					font-size: 63px;
 				}
 			}
 			p {
 				font-size: 27px;
+				@media only screen and (max-width: 991px) {
+					font-size: 16px;
+				}
 			}
 		}
 	}
@@ -967,6 +997,24 @@ body {
 		margin: 0 auto;
 		text-align: center;
 		padding: 0;
+		@media only screen and (max-width: 991px) {
+			background: url("img/karolina.jpg");
+			background-size: cover;
+			background-position: center;
+			display: table;
+			width: 100%;
+			max-width: 1400px;
+			margin: 0 auto;
+			text-align: center;
+			padding: 0;
+			background-size: contain;
+			min-height: 0;
+			height: 400px;
+		}
+		@media only screen and (max-width: 767px) {
+			height: 300px;
+			background-size: cover;
+		}
 		h1,
 		p {
 			color: #fff;
@@ -977,9 +1025,10 @@ body {
 			font-size: 129px;
 			vertical-align: middle;
 			display: table-cell;
-			@media only screen and (max-width: 767px) {
-				font-size: 99px;
-				line-height: 99px;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 100;
+			@media only screen and (max-width: 991px) {
+				font-size: 63px;
 			}
 		}
 		p {
@@ -1026,20 +1075,29 @@ body {
 		background-size: cover;
 		background-attachment: fixed;
 		background-position: center;
-		@media only screen and (max-width: 767px) {
-			min-height: 360px;
-
-		}
-		h1 {
-			font-size: 129px;
-			margin-top: 10vh;
-			color: #fff;
+		display: table;
+		width: 100%;
+		max-width: 1400px;
+		margin: 0 auto;
+		text-align: center;
+		padding: 0;
+		@media only screen and (max-width: 991px) {
+			background: url('img/vestuviu-paslaugos.jpg');
+			background-size: cover;
+			background-position: center;
+			display: table;
+			width: 100%;
+			max-width: 1400px;
+			margin: 0 auto;
 			text-align: center;
-			font-weight: 100;
-			@media only screen and (max-width: 767px) {
-				font-size: 99px;
-				line-height: 99px;
-			}
+			padding: 0;
+			background-size: contain;
+			min-height: 0;
+			height: 400px;
+		}
+		@media only screen and (max-width: 767px) {
+			height: 300px;
+			background-size: cover;
 		}
 	}
 	.paslaugos-fluid {

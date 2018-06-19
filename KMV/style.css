@@ -435,9 +435,10 @@ body .parallax-block {
   background-size: cover;
   margin-bottom: 90px;
 }
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 767px) {
   body .parallax-block {
     margin-bottom: 0;
+    min-height: 0;
   }
 }
 body .parallax-block .poros-block {
@@ -448,9 +449,9 @@ body .parallax-block .poros-block {
   background: linear-gradient(to right, #d6ae7b, #eacda3);
   opacity: 0.9;
 }
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 767px) {
   body .parallax-block .poros-block {
-    margin-top: 180px;
+    margin-top: 0;
   }
 }
 body .parallax-block .poros-block h2,
@@ -792,45 +793,79 @@ body .intro .intro-block .ivaizdis-start a:hover {
 }
 body .intro-kontaktai {
   background: url("img/vestuves.jpg");
+  padding-top: 0;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-@media only screen and (max-width: 767px) {
-  body .intro-kontaktai {
-    padding-bottom: 55%;
-    background-position: center;
-  }
+  background-position: center;
+  background-size: contain;
+  padding-bottom: 55.64%;
+  min-height: 0;
+  width: 100%;
 }
 body .intro-galerija {
   background: url("img/musu-poros.jpg");
-  background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  display: table;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  justify-content: center;
   width: 100%;
+  max-width: 1400px;
   margin: 0 auto;
   text-align: center;
   padding: 0;
 }
+@media only screen and (max-width: 991px) {
+  body .intro-galerija {
+    background: url("img/musu-poros.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+    background-size: contain;
+    min-height: 0;
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  body .intro-galerija {
+    height: 300px;
+    background-size: cover;
+  }
+}
 body .intro-galerija .our-couples {
-  display: table-cell;
-  vertical-align: middle;
+  text-align: center;
+  margin: 0 auto;
 }
 body .intro-galerija .our-couples h1,
 body .intro-galerija .our-couples p {
-  font-size: 129px;
   color: #fff;
   font-weight: 100;
   text-align: center;
+  font-family: 'Raleway', sans-serif;
 }
-@media only screen and (max-width: 767px) {
+body .intro-galerija .our-couples h1 {
+  font-size: 129px;
+  vertical-align: middle;
+  font-weight: 100;
+}
+@media only screen and (max-width: 991px) {
   body .intro-galerija .our-couples h1 {
-    font-size: 72px;
+    font-size: 63px;
   }
 }
 body .intro-galerija .our-couples p {
   font-size: 27px;
+}
+@media only screen and (max-width: 991px) {
+  body .intro-galerija .our-couples p {
+    font-size: 16px;
+  }
 }
 body .photo-menu {
   margin-top: 70px;
@@ -1202,6 +1237,28 @@ body .intro-vizija {
   text-align: center;
   padding: 0;
 }
+@media only screen and (max-width: 991px) {
+  body .intro-vizija {
+    background: url("img/karolina.jpg");
+    background-size: cover;
+    background-position: center;
+    display: table;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+    background-size: contain;
+    min-height: 0;
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  body .intro-vizija {
+    height: 300px;
+    background-size: cover;
+  }
+}
 body .intro-vizija h1,
 body .intro-vizija p {
   color: #fff;
@@ -1212,11 +1269,12 @@ body .intro-vizija h1 {
   font-size: 129px;
   vertical-align: middle;
   display: table-cell;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
   body .intro-vizija h1 {
-    font-size: 99px;
-    line-height: 99px;
+    font-size: 63px;
   }
 }
 body .intro-vizija p {
@@ -1262,23 +1320,33 @@ body .intro-paslaugos {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  display: table;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+}
+@media only screen and (max-width: 991px) {
+  body .intro-paslaugos {
+    background: url('img/vestuviu-paslaugos.jpg');
+    background-size: cover;
+    background-position: center;
+    display: table;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+    background-size: contain;
+    min-height: 0;
+    height: 400px;
+  }
 }
 @media only screen and (max-width: 767px) {
   body .intro-paslaugos {
-    min-height: 360px;
-  }
-}
-body .intro-paslaugos h1 {
-  font-size: 129px;
-  margin-top: 10vh;
-  color: #fff;
-  text-align: center;
-  font-weight: 100;
-}
-@media only screen and (max-width: 767px) {
-  body .intro-paslaugos h1 {
-    font-size: 99px;
-    line-height: 99px;
+    height: 300px;
+    background-size: cover;
   }
 }
 body .paslaugos-fluid {
